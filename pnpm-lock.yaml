@@ -36,6 +36,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@prisma/client':
+        specifier: 6.3.0
+        version: 6.3.0(prisma@6.3.0(typescript@5.7.3))(typescript@5.7.3)
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -128,13 +131,13 @@ importers:
       '@prisma/client':
         specifier: 6.3.0
         version: 6.3.0(prisma@6.3.0(typescript@5.7.3))(typescript@5.7.3)
-      prisma:
-        specifier: ^6.3.0
-        version: 6.3.0(typescript@5.7.3)
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      prisma:
+        specifier: ^6.3.0
+        version: 6.3.0(typescript@5.7.3)
 
   packages/typescript-config: {}
 
